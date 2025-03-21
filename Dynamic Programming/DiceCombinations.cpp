@@ -17,10 +17,11 @@
      ll result = 0; 
      for (int i = 1; i <= 6; i++) {
          if(x-i < 0) break;
-         result = (result % mod + f(x - i) % mod) % mod;
+        //  result = (result % mod + f(x - i) % mod) % mod;
+        result = (result  + f(x - i) ) % mod;
      }
      
-     return dp[x] = result % mod;
+     return dp[x] = result ;
  }
  
  int main() {
