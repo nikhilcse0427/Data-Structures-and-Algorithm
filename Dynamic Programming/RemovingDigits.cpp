@@ -42,10 +42,9 @@ int f(int n){
 }
 int main(){
   int n;
-  cout<<"Enter any positive number: ";
   cin>>n;
   dp.clear();
-  dp.resize(n+5, -1);
-  cout<<"Output: "<<f(n);
+  dp.resize(1000005, -1);
+  cout<<f(n);
   return 0;
 }
