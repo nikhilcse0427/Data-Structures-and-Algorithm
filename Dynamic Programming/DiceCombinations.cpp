@@ -21,7 +21,7 @@
         result = (result  + f(x - i) ) % mod;
      }
      
-     return dp[x] = result ;
+     return dp[x] = result;
  }
  
  int main() {
